@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "module": "commonjs", // use ES2015 modules,
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true
+  }
+}
