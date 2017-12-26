@@ -1,12 +1,14 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React, { Component } from 'react'
+import { render } from 'react-dom'
 
-const App = () => {
-  return (
-    <div>
-      <p>Hello world!</p>
-    </div>
-  )
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <h1>Arriba siempre arriba hasta las estrellas!</h1>
+      </div>
+    )
+  }
 }
 
-ReactDOM.render(<App />, document.getElementById('app'))
+render(<App />, document.getElementById('app'))
