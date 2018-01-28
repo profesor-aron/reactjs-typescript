@@ -12,7 +12,7 @@ module.exports = {
   module: {
     rules: [
       // .ts(x) files should first pass through the Typescript loader, and then through babel
-      { test: /\.tsx?$/, loaders: ['babel-loader', 'awesome-typescript-loader'] }
+      { test: /\.tsx?$/, loaders: ['awesome-typescript-loader'] }
     ]
   },
   plugins: [
