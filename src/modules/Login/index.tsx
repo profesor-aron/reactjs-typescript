@@ -4,7 +4,7 @@ export class Login extends Component {
   render() {
     return (
       <div>
-        Login Page in contruction, be fun
+        Feature2 Login Page in contruction, be fun
       </div>
     )
   }
