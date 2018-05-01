@@ -3,7 +3,7 @@ const webpack = require('webpack')
 module.exports = {
   entry: "./src/index.tsx",
   output: {
-    filename: "dist/bundle.js"
+    filename: "bundle.js"
   },
   resolve: {
     // Look for modules in .ts(x) files first, then .js
@@ -12,7 +12,7 @@ module.exports = {
   module: {
     rules: [
       // .ts(x) files should first pass through the Typescript loader, and then through babel
-      { test: /\.tsx?$/, loaders: ['awesome-typescript-loader'] }
+      { test: /\.tsx?$/, loaders: ['ts-loader'] }
     ]
   },
   plugins: [

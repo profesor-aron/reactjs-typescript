@@ -1,17 +1,20 @@
 import React, { Component } from 'react'
 import { render } from 'react-dom'
 
-import {Login} from './modules/Login'
+import { Login } from './modules/Login'
+
+interface IInfo {
+  [key:string]: string
+  appName: string
+  devepoler: string
+  twitterAccount: string
+}
 
 class App extends Component {
   render() {
-    const data = {
+    let allData: IInfo = {
       appName: 'React JS TypeScript',
-      devepoler: 'Aron HERRERA PONTE'
-    }
-
-    let allData = {
-      ...data,
+      devepoler: 'Aron HERRERA PONTE',
       twitterAccount: '@aehp20'
     }
 
